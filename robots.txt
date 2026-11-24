@@ -1,0 +1,10 @@
+# robots.txt for AQUAMANAGE – Water Resources and Management
+# https://sayandas4606-crypto.github.io/aquamanage-water-resources/
+
+User-agent: *
+Allow: /
+Disallow: /api/db.php
+Disallow: /api/config.php
+
+# Sitemap location
+Sitemap: https://sayandas4606-crypto.github.io/aquamanage-water-resources/sitemap.xml

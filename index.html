@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AQUAMANAGE – Water Resources and Management is a premier university-level educational portal and engineering project exploring hydrological conservation, smart water IoT monitoring, rainwater harvesting, and sustainable ecosystem management.">
+    <meta name="keywords" content="AQUAMANAGE, Water Resources, Water Management, Rainwater Harvesting, Groundwater Depletion, Hydrology, Sustainable Engineering, Water Conservation Methods, Drip Irrigation, Water Usage Calculator, B.Tech CSE Project">
+    <meta name="author" content="AQUAMANAGE Project Team - Department of Computer Science & Engineering">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://sayandas4606-crypto.github.io/aquamanage-water-resources/">
+    <title>AQUAMANAGE – Water Resources and Management | Global Conservation &amp; Hydrology Portal</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sayandas4606-crypto.github.io/aquamanage-water-resources/">
+    <meta property="og:site_name" content="AQUAMANAGE – Water Resources and Management">
+    <meta property="og:title" content="AQUAMANAGE – Water Resources and Management">
+    <meta property="og:description" content="Every Drop Counts. Every Action Matters. Explore planetary water distribution, interactive footprint calculator, and precision conservation techniques.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AQUAMANAGE – Water Resources and Management">
+    <meta name="twitter:description" content="Every Drop Counts. Every Action Matters. Educational portal on water management and conservation.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+
+    <!-- JSON-LD Structured Data for Google Search Visibility -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://sayandas4606-crypto.github.io/aquamanage-water-resources/#website",
+          "url": "https://sayandas4606-crypto.github.io/aquamanage-water-resources/",
+          "name": "AQUAMANAGE – Water Resources and Management",
+          "description": "Educational portal on hydrological conservation, smart water grids, and sustainable management.",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://sayandas4606-crypto.github.io/aquamanage-water-resources/#calculator",
+          "name": "AQUAMANAGE Water Footprint Calculator",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://sayandas4606-crypto.github.io/aquamanage-water-resources/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What are water resources?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Water resources are natural reservoirs of water on Earth that are potentially or directly useful to humans for agriculture, drinking, industry, and ecological sustenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What percentage of Earth's water is freshwater?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Only approximately 2.5% of total water on Earth is freshwater, with over 68% trapped in glaciers and ice caps, leaving less than 1% readily accessible in aquifers, lakes, and rivers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the WHO daily water requirement benchmark?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The World Health Organization (WHO) benchmark recommends 135 liters per capita per day for domestic municipal consumption."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap 5 CSS Grid & Utilities (Lightweight) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         TOP NOTIFICATION / ACADEMIC BANNER
+         ====================================================================== -->
+    <div style="background: linear-gradient(90deg, #0077b6, #00b4d8); color: #ffffff; font-size: 0.8rem; font-weight: 600; text-align: center; padding: 0.4rem 1rem; letter-spacing: 0.05em;">
+        <i class="fas fa-graduation-cap"></i> B.Tech CSE Final Year Presentation Project &bull; Sustainable Computing &amp; Environmental Engineering &bull; 
+        <span style="text-decoration: underline; cursor: pointer;" class="open-pledge-trigger">Join 150+ Students in Taking the Water Conservation Pledge</span>
+    </div>
+
+    <!-- ======================================================================
+         NAVIGATION BAR
+         ====================================================================== -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="brand-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <div>
+                    <span>AQUA<span style="color: var(--aqua-primary);">MANAGE</span></span>
+                    <span class="brand-badge">B.TECH CSE</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#intro" class="nav-link">Introduction</a></li>
+                <li><a href="#types" class="nav-link">Resources</a></li>
+                <li><a href="#importance" class="nav-link">Importance</a></li>
+                <li><a href="#problems" class="nav-link">Crisis</a></li>
+                <li><a href="#conservation" class="nav-link">Conservation</a></li>
+                <li><a href="#techniques" class="nav-link">Management</a></li>
+                <li><a href="#interactive" class="nav-link">Calculator</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Connect</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="#interactive" class="btn-pledge-nav open-pledge-trigger">
+                    <i class="fas fa-hand-holding-water"></i> Take Pledge
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================================================================
+         1. HERO SECTION
+         ====================================================================== -->
+    <header class="hero-section" id="home">
+        <canvas id="waterCanvas" class="hero-bg-canvas"></canvas>
+        <div class="hero-overlay-glow"></div>
+
+        <div class="container hero-content">
+            <div class="hero-academic-tag">
+                <i class="fas fa-leaf"></i> HydroSphere Engineering &bull; UN SDG Goal 6: Clean Water &amp; Sanitation
+            </div>
+
+            <h1 class="hero-title">
+                WATER RESOURCES &amp; <br>
+                <span class="text-gradient">MANAGEMENT</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                "Every Drop Counts. Every Action Matters." <br>
+                An intelligent educational portal exploring the global hydrological cycle, precision conservation techniques, and smart IoT water infrastructure.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#interactive" class="btn btn-primary">
+                    <i class="fas fa-calculator"></i> Calculate Water Footprint
+                </a>
+                <a href="#intro" class="btn btn-outline">
+                    <i class="fas fa-compass"></i> Explore Curriculum
+                </a>
+                <button class="btn btn-emerald open-pledge-trigger">
+                    <i class="fas fa-tint"></i> Take Water Pledge
+                </button>
+            </div>
+
+            <!-- Animated Live Statistics -->
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="71" data-suffix="%">0%</div>
+                    <div class="stat-label">Earth's Surface Covered by Water</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2.5" data-suffix="%">0%</div>
+                    <div class="stat-label">Total Freshwater Worldwide</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2.2" data-suffix="B">0</div>
+                    <div class="stat-label">People Lacking Safe Drinking Water</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="70" data-suffix="%">0%</div>
+                    <div class="stat-label">Freshwater Used in Agriculture</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Layered Animated Waves Divider -->
+        <div class="wave-divider">
+            <svg class="waves-animation-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="wave-parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" />
+                </g>
+            </svg>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         2. INTRODUCTION SECTION
+         ====================================================================== -->
+    <section class="section" id="intro">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-atom"></i> Academic Foundations</div>
+                <h2 class="section-title">Introduction to <span class="text-gradient">Water Resources</span></h2>
+                <p class="section-subtitle">
+                    Water is Earth's most critical natural compound ($H_2O$), driving the global hydrological cycle, climate equilibrium, and sustaining all biological metabolism.
+                </p>
+            </div>
+
+            <div class="intro-grid">
+                <div>
+                    <h3 class="intro-lead">What Are Water Resources?</h3>
+                    <p class="intro-text">
+                        Water resources are natural reservoirs and sources of water that are potentially or directly useful to humans. Uses encompass agricultural irrigation, industrial production, domestic sanitation, environmental maintenance, and recreation.
+                    </p>
+                    <p class="intro-text">
+                        Out of all the water on Earth, approximately <strong>97.5% is saline water</strong> filling our oceans and seas. Only <strong>2.5% is freshwater</strong>, and over 68% of that freshwater is trapped in polar ice caps, leaving less than 1% readily accessible in aquifers, lakes, and rivers.
+                    </p>
+
+                    <ul class="intro-feature-list">
+                        <li class="intro-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Biological Essentiality:</strong> Human cells comprise ~60% water; hydration is mandatory for nutrient transport, temperature regulation, and cellular homeostasis.
+                            </div>
+                        </li>
+                        <li class="intro-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Economic Catalyst:</strong> Water powers over 40% of global industrial manufacturing and generates clean hydroelectric energy worldwide.
+                            </div>
+                        </li>
+                        <li class="intro-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Ecosystem Lifeline:</strong> Wetlands, riparian zones, and river deltas sequester carbon, filter toxins, and harbor 40% of global biodiversity.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="water-distribution-visual">
+                    <h4 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-chart-pie" style="color: var(--aqua-primary);"></i> Planetary Water Breakdown
+                    </h4>
+
+                    <div class="distribution-bar">
+                        <div class="dist-label-row">
+                            <span>Oceans &amp; Saline Seas</span>
+                            <span style="color: var(--aqua-secondary);">97.5%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-ocean" style="width: 97.5%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="distribution-bar">
+                        <div class="dist-label-row">
+                            <span>Glaciers &amp; Polar Ice Caps</span>
+                            <span style="color: var(--aqua-primary);">1.74%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-glacier" style="width: 35%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="distribution-bar">
+                        <div class="dist-label-row">
+                            <span>Groundwater Aquifers</span>
+                            <span style="color: var(--seafoam);">0.75%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-freshwater" style="width: 25%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="distribution-bar">
+                        <div class="dist-label-row">
+                            <span>Accessible Rivers, Lakes &amp; Atmosphere</span>
+                            <span style="color: #ffb703;">0.01%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 8%; background: #ffb703;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; padding: 1rem; background: rgba(0, 240, 255, 0.08); border-radius: var(--radius-sm); font-size: 0.88rem; color: var(--text-secondary);">
+                        <i class="fas fa-info-circle" style="color: var(--aqua-primary);"></i> 
+                        <strong>Key Hydrological Takeaway:</strong> If all Earth's water equaled 100 liters, accessible freshwater for mankind would measure less than a single teaspoon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         3. TYPES OF WATER RESOURCES
+         ====================================================================== -->
+    <section class="section" id="types" style="background: rgba(0, 0, 0, 0.15);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-layer-group"></i> Hydrosphere Classification</div>
+                <h2 class="section-title">Major Types of <span class="text-gradient">Water Resources</span></h2>
+                <p class="section-subtitle">
+                    Water resources manifest in four primary physical domains across Earth's biosphere, each characterized by distinct replenishment cycles and extraction dynamics.
+                </p>
+            </div>
+
+            <div class="types-grid">
+                <!-- Card 1: Surface Water -->
+                <div class="glass-card type-card">
+                    <div class="water-ripple-layer"></div>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=800&q=80" alt="Surface Water Lake and River" loading="lazy">
+                        <span class="card-tag">Dynamic Basin</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-water"></i></div>
+                        <h3>Surface Water</h3>
+                        <p>
+                            Water situated naturally on Earth's crust in freshwater lakes, rivers, reservoirs, and wetlands. Directly recharged by precipitation and snowmelt, surface water sustains municipal grids and agricultural canal networks globally.
+                        </p>
+                        <div class="type-metrics">
+                            <span>Coverage: ~1.2M km²</span>
+                            <span>Usage: 62% Public</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Groundwater -->
+                <div class="glass-card type-card">
+                    <div class="water-ripple-layer"></div>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Subsurface Aquifer and Groundwater" loading="lazy">
+                        <span class="card-tag">Subsurface</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Groundwater</h3>
+                        <p>
+                            Freshwater saturated beneath Earth's surface within porous soil layers, fractured bedrock, and geological aquifers. It provides over 50% of the world's drinking water and acts as a drought buffer during dry seasons.
+                        </p>
+                        <div class="type-metrics">
+                            <span>Reserves: 30% Fresh</span>
+                            <span>Purity: High Filtered</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Rainwater -->
+                <div class="glass-card type-card">
+                    <div class="water-ripple-layer"></div>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&w=800&q=80" alt="Rainwater Precipitation Drops" loading="lazy">
+                        <span class="card-tag">Atmospheric</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-cloud-showers-heavy"></i></div>
+                        <h3>Rainwater</h3>
+                        <p>
+                            Direct precipitation falling from atmospheric condensation. It is the purest natural freshwater source before ground contact. Rooftop harvesting and contour collection provide decentralized, non-grid water independence.
+                        </p>
+                        <div class="type-metrics">
+                            <span>Annual: 505,000 km³</span>
+                            <span>Harvesting: Decentralized</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Oceans and Seas -->
+                <div class="glass-card type-card">
+                    <div class="water-ripple-layer"></div>
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80" alt="Vast Ocean Waters" loading="lazy">
+                        <span class="card-tag">Saline Reserve</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-ship"></i></div>
+                        <h3>Oceans &amp; Seas</h3>
+                        <p>
+                            Encompassing 71% of Earth's surface and containing 97.5% of total water volume. While high in salinity (avg. 35 PSU), modern thermal and Reverse Osmosis (SWRO) desalination unlocks oceans as drought-proof potable sources.
+                        </p>
+                        <div class="type-metrics">
+                            <span>Volume: 1.332B km³</span>
+                            <span>Tech: SWRO Desal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         4. IMPORTANCE OF WATER
+         ====================================================================== -->
+    <section class="section" id="importance">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-heartbeat"></i> Multi-Sectoral Dependency</div>
+                <h2 class="section-title">The Fundamental <span class="text-gradient">Importance of Water</span></h2>
+                <p class="section-subtitle">
+                    Water is the foundational nexus connecting food security, human health, industrial production, clean power, and planetary ecological stability.
+                </p>
+            </div>
+
+            <div class="importance-grid">
+                <!-- 1. Agriculture -->
+                <div class="glass-card importance-card card-agri">
+                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    <h4>Agriculture &amp; Food Security</h4>
+                    <p>
+                        Consumes ~70% of global freshwater withdrawals. Water is vital for seed germination, photosynthetic transpiration, and nutrient assimilation across global crop cultivation and livestock feed.
+                    </p>
+                    <span class="stat-pill">Consumes 70% Global Fresh Water</span>
+                </div>
+
+                <!-- 2. Drinking Water -->
+                <div class="glass-card importance-card card-drink">
+                    <div class="card-icon"><i class="fas fa-glass-whiskey"></i></div>
+                    <h4>Drinking Water &amp; Sanitation</h4>
+                    <p>
+                        Access to pathogen-free potable water is recognized by the United Nations as an inalienable human right. Safe water eliminates waterborne pathogens, dysentery, cholera, and child mortality.
+                    </p>
+                    <span class="stat-pill">UN SDG Goal 6 Target</span>
+                </div>
+
+                <!-- 3. Industries -->
+                <div class="glass-card importance-card card-ind">
+                    <div class="card-icon"><i class="fas fa-industry"></i></div>
+                    <h4>Industrial Manufacturing</h4>
+                    <p>
+                        Essential as a thermodynamic cooling medium, chemical solvent, raw material component, and washing agent in microchip fabrication, automotive assembly, textiles, and paper production.
+                    </p>
+                    <span class="stat-pill">19% of Global Withdrawals</span>
+                </div>
+
+                <!-- 4. Ecosystems -->
+                <div class="glass-card importance-card card-eco">
+                    <div class="card-icon"><i class="fas fa-tree"></i></div>
+                    <h4>Ecosystem Integrity &amp; Climate</h4>
+                    <p>
+                        Rivers, estuaries, and peatlands regulate regional microclimates, prevent soil erosion, buffer coastal hurricane storm surges, and provide breeding grounds for endangered aquatic species.
+                    </p>
+                    <span class="stat-pill">Carbon Sinks &amp; Biodiversity</span>
+                </div>
+
+                <!-- 5. Human Health -->
+                <div class="glass-card importance-card card-health">
+                    <div class="card-icon"><i class="fas fa-lungs"></i></div>
+                    <h4>Physiological Human Health</h4>
+                    <p>
+                        Water constitutes 60% of adult body mass. It regulates core body temperature via perspiration, lubricates joints, transports oxygen in erythrocytes, and flushes toxins through the renal system.
+                    </p>
+                    <span class="stat-pill">60% of Human Biology</span>
+                </div>
+
+                <!-- 6. Hydroelectric & Energy -->
+                <div class="glass-card importance-card card-energy">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Clean Hydroelectric Energy</h4>
+                    <p>
+                        Water drives zero-emission renewable energy through gravitational hydroelectric dams, pumped-storage hydropower, and tidal turbines, generating over 16% of global electricity.
+                    </p>
+                    <span class="stat-pill">16%+ Renewable Electricity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         5. WATER PROBLEMS & GLOBAL CRISES
+         ====================================================================== -->
+    <section class="section" id="problems" style="background: rgba(30, 10, 20, 0.2);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" style="color: #ff6b6b; border-color: rgba(255, 107, 107, 0.3); background: rgba(255, 107, 107, 0.1);">
+                    <i class="fas fa-exclamation-triangle"></i> Global Crisis Alert
+                </div>
+                <h2 class="section-title">Critical <span style="color: #ff6b6b;">Water Problems</span></h2>
+                <p class="section-subtitle">
+                    Human population growth, industrial neglect, and climate instability have triggered an unprecedented global water crisis threatening civil stability.
+                </p>
+            </div>
+
+            <div class="problems-grid">
+                <!-- Problem 1: Water Pollution -->
+                <div class="glass-card problem-card">
+                    <div class="card-icon"><i class="fas fa-biohazard"></i></div>
+                    <h4 style="color: #ff8585;">Water Pollution</h4>
+                    <p>
+                        Untreated industrial chemicals, heavy metals (arsenic, lead), microplastics, and synthetic fertilizer runoff (eutrophication) enter rivers and groundwater tables, poisoning aquatic life.
+                    </p>
+                    <div class="problem-impact">
+                        <i class="fas fa-skull-crossbones"></i> 80% of municipal wastewater is discharged without treatment globally.
+                    </div>
+                </div>
+
+                <!-- Problem 2: Water Scarcity -->
+                <div class="glass-card problem-card">
+                    <div class="card-icon"><i class="fas fa-tint-slash"></i></div>
+                    <h4 style="color: #ff8585;">Physical &amp; Economic Scarcity</h4>
+                    <p>
+                        Over 2.3 billion people live in water-stressed countries. Rapid urban migration strains local aquifers, pushing major metropolitan hubs toward catastrophic "Day Zero" water cut-offs.
+                    </p>
+                    <div class="problem-impact">
+                        <i class="fas fa-users-slash"></i> 4 Billion people experience severe water scarcity for at least 1 month per year.
+                    </div>
+                </div>
+
+                <!-- Problem 3: Groundwater Depletion -->
+                <div class="glass-card problem-card">
+                    <div class="card-icon"><i class="fas fa-arrow-down"></i></div>
+                    <h4 style="color: #ff8585;">Aquifer Over-Drafting</h4>
+                    <p>
+                        Unregulated deep borehole drilling extracts groundwater much faster than natural rainwater percolation can replenish it, causing permanent land subsidence and aquifer salinization.
+                    </p>
+                    <div class="problem-impact">
+                        <i class="fas fa-mountain"></i> Water tables in agricultural belts have plunged over 30 to 80 meters.
+                    </div>
+                </div>
+
+                <!-- Problem 4: Climate Change -->
+                <div class="glass-card problem-card">
+                    <div class="card-icon"><i class="fas fa-temperature-high"></i></div>
+                    <h4 style="color: #ff8585;">Climate Disruption &amp; Droughts</h4>
+                    <p>
+                        Global warming disrupts established monsoon cycles, induces prolonged multi-year megadroughts, and triggers rapid melting of Himalayan and Andean freshwater glaciers.
+                    </p>
+                    <div class="problem-impact">
+                        <i class="fas fa-fire"></i> Drought frequency and severity have surged by 29% since the year 2000.
+                    </div>
+                </div>
+
+                <!-- Problem 5: Infrastructure Wastage -->
+                <div class="glass-card problem-card">
+                    <div class="card-icon"><i class="fas fa-faucet-drip"></i></div>
+                    <h4 style="color: #ff8585;">Distribution Leaks &amp; Wastage</h4>
+                    <p>
+                        Aging municipal piping networks lose colossal volumes of treated drinking water via undetectable subsurface pipe bursts, joint fissures, and low-efficiency open-channel flood irrigation.
+                    </p>
+                    <div class="problem-impact">
+                        <i class="fas fa-pipe-valve"></i> Up to 45 Billion liters of potable drinking water are lost every day through pipe leaks.
+                    </div>
+                </div>
+
+                <!-- Problem 6: Transboundary Conflicts -->
+                <div class="glass-card problem-card">
+                    <div class="card-icon"><i class="fas fa-handshake-slash"></i></div>
+                    <h4 style="color: #ff8585;">Geopolitical Water Conflicts</h4>
+                    <p>
+                        Upstream dam construction on transboundary rivers (e.g. Nile, Mekong, Indus) sparks geopolitical friction between downstream sovereign nations dependent on baseline water flow.
+                    </p>
+                    <div class="problem-impact">
+                        <i class="fas fa-globe-americas"></i> Over 310 international river basins cross sovereign border boundaries.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         6. WATER CONSERVATION METHODS
+         ====================================================================== -->
+    <section class="section" id="conservation">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-shield-alt"></i> Sustainable Action</div>
+                <h2 class="section-title">Proven <span class="text-gradient">Conservation Methods</span></h2>
+                <p class="section-subtitle">
+                    Practical, scalable engineering and community interventions designed to recharge aquifers, eliminate waste, and optimize water usage efficiency.
+                </p>
+            </div>
+
+            <div class="conservation-grid">
+                <!-- Method 1: Rainwater Harvesting -->
+                <div class="glass-card conservation-card">
+                    <div class="card-icon"><i class="fas fa-cloud-download-alt"></i></div>
+                    <h4>Rooftop Rainwater Harvesting</h4>
+                    <p>
+                        Catching precipitation from residential, commercial, and industrial roofs via gutters, passing it through multi-layer gravel/sand filters, and storing it in sterile cisterns or direct aquifer recharge pits.
+                    </p>
+                    <div class="conservation-steps">
+                        <div class="conservation-step"><i class="fas fa-check"></i> 100 sq.m roof yields ~80,000L annually</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Drastically curbs municipal tanker costs</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Reduces urban stormwater flash flooding</div>
+                    </div>
+                </div>
+
+                <!-- Method 2: Managed Aquifer Recharge -->
+                <div class="glass-card conservation-card">
+                    <div class="card-icon"><i class="fas fa-fill-drip"></i></div>
+                    <h4>Groundwater Recharge Wells</h4>
+                    <p>
+                        Constructing percolation ponds, check dams, and deep recharge borewells that channel surplus monsoon surface runoff directly into depleted underground aquifers, raising the static water table.
+                    </p>
+                    <div class="conservation-steps">
+                        <div class="conservation-step"><i class="fas fa-check"></i> Rebuilds sub-surface water reserves</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Halts coastal saline water intrusion</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Zero land footprint (subsurface storage)</div>
+                    </div>
+                </div>
+
+                <!-- Method 3: Precision Drip Irrigation -->
+                <div class="glass-card conservation-card">
+                    <div class="card-icon"><i class="fas fa-tint"></i></div>
+                    <h4>Precision Drip &amp; Micro-Irrigation</h4>
+                    <p>
+                        Replacing inefficient flood furrow methods with pressurized piping networks and micro-emitters that deliver water directly to the plant root zone drop-by-drop, eliminating surface evaporation.
+                    </p>
+                    <div class="conservation-steps">
+                        <div class="conservation-step"><i class="fas fa-check"></i> 50% to 70% water savings over flood irrigation</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> 30% higher agricultural crop yields</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Enables automated fertigation injection</div>
+                    </div>
+                </div>
+
+                <!-- Method 4: Wastewater Recycling -->
+                <div class="glass-card conservation-card">
+                    <div class="card-icon"><i class="fas fa-recycle"></i></div>
+                    <h4>Wastewater Treatment &amp; Recycling</h4>
+                    <p>
+                        Treating domestic greywater (from sinks, washing, showers) and municipal sewage through Sewage Treatment Plants (STP) using bioreactors, clarifying settling tanks, and UV disinfection.
+                    </p>
+                    <div class="conservation-steps">
+                        <div class="conservation-step"><i class="fas fa-check"></i> Reclaimed water for toilet flushing &amp; HVAC</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Zero Liquid Discharge (ZLD) in factories</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Preserves drinking-grade water supplies</div>
+                    </div>
+                </div>
+
+                <!-- Method 5: Watershed Management -->
+                <div class="glass-card conservation-card">
+                    <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                    <h4>Integrated Watershed Management</h4>
+                    <p>
+                        Holistic ridge-to-valley ecological development using contour trenching, check bunds, agroforestry, and afforestation to retard runoff velocity and enhance natural soil percolation.
+                    </p>
+                    <div class="conservation-steps">
+                        <div class="conservation-step"><i class="fas fa-check"></i> Restores dry springs and stream baseflows</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Traps fertile agricultural topsoil from erosion</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Community-driven rural water resilience</div>
+                    </div>
+                </div>
+
+                <!-- Method 6: Domestic Conservation Devices -->
+                <div class="glass-card conservation-card">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h4>Low-Flow Fixtures &amp; Smart Aerators</h4>
+                    <p>
+                        Fitting aerators to residential faucets and installing dual-flush toilet cisterns. Aerators mix air with the water jet, reducing volumetric flow from 15 L/min down to 5 L/min without sacrificing pressure.
+                    </p>
+                    <div class="conservation-steps">
+                        <div class="conservation-step"><i class="fas fa-check"></i> Saves up to 25,000 Liters per household/year</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Inexpensive retrofit for campus dorms</div>
+                        <div class="conservation-step"><i class="fas fa-check"></i> Lowers domestic water and heating utility bills</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         7. WATER MANAGEMENT TECHNIQUES
+         ====================================================================== -->
+    <section class="section" id="techniques" style="background: rgba(0, 0, 0, 0.18);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-microchip"></i> Engineering &amp; Technology</div>
+                <h2 class="section-title">Modern <span class="text-gradient">Management Techniques</span></h2>
+                <p class="section-subtitle">
+                    How computer science, IoT telemetry, artificial intelligence, and advanced chemical engineering revolutionize 21st-century water governance.
+                </p>
+            </div>
+
+            <div class="management-grid">
+                <!-- Technique 1: IoT & Telemetry -->
+                <div class="glass-card management-card">
+                    <div class="card-icon"><i class="fas fa-satellite-dish"></i></div>
+                    <div>
+                        <h4>Smart IoT Water Grid &amp; Sensor Telemetry</h4>
+                        <p>
+                            Deploying ultrasonic flow meters, LoRaWAN pressure transducers, and acoustic hydrophone sensors across municipal pipeline grids. Data is transmitted to central SCADA software to pinpoint pinhole pipe leaks in real time before catastrophic line ruptures occur.
+                        </p>
+                        <div class="tech-badge-group">
+                            <span class="tech-badge">LoRaWAN</span>
+                            <span class="tech-badge">SCADA Grids</span>
+                            <span class="tech-badge">Acoustic Leak Detection</span>
+                            <span class="tech-badge">Edge Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technique 2: AI & Machine Learning -->
+                <div class="glass-card management-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <div>
+                        <h4>AI-Driven Predictive Hydrology</h4>
+                        <p>
+                            Machine learning models trained on decades of weather satellite radar data, historical reservoir water levels, and evapotranspiration indices to accurately predict monsoon inflows, drought risks, and optimize municipal pump schedules to save electrical power.
+                        </p>
+                        <div class="tech-badge-group">
+                            <span class="tech-badge">Deep Neural Networks</span>
+                            <span class="tech-badge">Inflow Forecasting</span>
+                            <span class="tech-badge">Pump Energy Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technique 3: Advanced Membrane Treatment -->
+                <div class="glass-card management-card">
+                    <div class="card-icon"><i class="fas fa-filter"></i></div>
+                    <div>
+                        <h4>Advanced Membrane Filtration &amp; Desalination</h4>
+                        <p>
+                            State-of-the-art seawater reverse osmosis (SWRO), nanofiltration, and forward osmosis (FO) technologies with energy recovery devices (ERDs). Modern membranes strip 99.8% of dissolved minerals, bacteria, and microplastics at an energy cost under 3 kWh/m³.
+                        </p>
+                        <div class="tech-badge-group">
+                            <span class="tech-badge">SWRO Membranes</span>
+                            <span class="tech-badge">Isobaric Energy Recovery</span>
+                            <span class="tech-badge">UV Photo-oxidation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technique 4: Precision Agro-Tech -->
+                <div class="glass-card management-card">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <h4>Automated Soil Moisture Micro-Irrigation</h4>
+                        <p>
+                            Capacitive soil moisture sensors placed at root depth communicate with microcontrollers (ESP32/Arduino) to trigger solenoid valves only when soil moisture dips beneath critical crop thresholds, preventing waterlogging and saving up to 60% irrigation water.
+                        </p>
+                        <div class="tech-badge-group">
+                            <span class="tech-badge">Soil Capacitance</span>
+                            <span class="tech-badge">Automated Solenoids</span>
+                            <span class="tech-badge">Crop Water Stress Index</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         8. INTERACTIVE SECTION (CALCULATOR, QUIZ, CHALLENGES)
+         ====================================================================== -->
+    <section class="section" id="interactive">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-gamepad"></i> Interactive Exploration Hub</div>
+                <h2 class="section-title">Interactive <span class="text-gradient">Water Suite</span></h2>
+                <p class="section-subtitle">
+                    Audit your daily water footprint, take academic hydrology quizzes, adopt daily conservation habits, and discover mind-blowing water science facts.
+                </p>
+            </div>
+
+            <!-- Tab Navigation Buttons -->
+            <div class="interactive-tabs-nav">
+                <button class="tab-btn active" data-target="tabCalculator">
+                    <i class="fas fa-calculator"></i> Water Footprint Calculator
+                </button>
+                <button class="tab-btn" data-target="tabChallenges">
+                    <i class="fas fa-tasks"></i> Daily Water Challenges
+                </button>
+                <button class="tab-btn" data-target="tabQuiz">
+                    <i class="fas fa-question-circle"></i> Water Knowledge Quiz
+                </button>
+                <button class="tab-btn" data-target="tabFacts">
+                    <i class="fas fa-lightbulb"></i> Hydrological Facts
+                </button>
+            </div>
+
+            <!-- Tab 1: Water Usage Calculator -->
+            <div class="tab-panel active" id="tabCalculator">
+                <div class="calc-container">
+                    <!-- Left: Sliders & Controls -->
+                    <div class="calc-inputs-col">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.6rem;">
+                            <i class="fas fa-sliders-h" style="color: var(--aqua-primary);"></i> Household Usage Parameters
+                        </h3>
+                        <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1rem;">
+                            Adjust the sliders below to calculate your family's daily water consumption and benchmark against World Health Organization (WHO) standards.
+                        </p>
+
+                        <!-- Family Size -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <span class="calc-label"><i class="fas fa-users"></i> Family Members Count</span>
+                                <span class="calc-value-badge" id="valFamilySize">4 Members</span>
+                            </div>
+                            <input type="range" class="range-slider" id="calcFamilySize" min="1" max="10" value="4">
+                        </div>
+
+                        <!-- Shower Duration -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <span class="calc-label"><i class="fas fa-shower"></i> Daily Shower Time (per person)</span>
+                                <span class="calc-value-badge" id="valShowerMin">8 min/day</span>
+                            </div>
+                            <input type="range" class="range-slider" id="calcShowerMin" min="2" max="25" value="8">
+                        </div>
+
+                        <!-- Toilet Flushes -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <span class="calc-label"><i class="fas fa-toilet"></i> Daily Toilet Flushes (per person)</span>
+                                <span class="calc-value-badge" id="valFlushes">5 flushes/day</span>
+                            </div>
+                            <input type="range" class="range-slider" id="calcFlushes" min="1" max="10" value="5">
+                        </div>
+
+                        <!-- Running Taps (Brushing & Washing) -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <span class="calc-label"><i class="fas fa-faucet"></i> Running Tap for Brushing &amp; Washing</span>
+                                <span class="calc-value-badge" id="valTapMin">4 min/day</span>
+                            </div>
+                            <input type="range" class="range-slider" id="calcTapMin" min="1" max="15" value="4">
+                        </div>
+
+                        <!-- Kitchen Dishwashing -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <span class="calc-label"><i class="fas fa-utensils"></i> Dishwashing Method</span>
+                            </div>
+                            <select class="form-control" id="calcDishes" style="background: rgba(255,255,255,0.06); color: var(--text-primary);">
+                                <option value="hand">Manual Hand Wash under running tap (~32 L/day)</option>
+                                <option value="dishwasher">Energy-Star Rated Automatic Dishwasher (~14 L/cycle)</option>
+                            </select>
+                        </div>
+
+                        <!-- Laundry Machine -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <span class="calc-label"><i class="fas fa-tshirt"></i> Washing Machine Loads / Week</span>
+                                <span class="calc-value-badge" id="valLaundry">4 loads/wk</span>
+                            </div>
+                            <input type="range" class="range-slider" id="calcLaundry" min="0" max="14" value="4">
+                        </div>
+
+                        <!-- Garden & Balcony -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <span class="calc-label"><i class="fas fa-tree"></i> Outdoor Garden / Car Washing</span>
+                                <span class="calc-value-badge" id="valGarden">5 min/day</span>
+                            </div>
+                            <input type="range" class="range-slider" id="calcGarden" min="0" max="45" value="5">
+                        </div>
+
+                        <!-- Pipe Leak Checkbox -->
+                        <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0;">
+                            <input type="checkbox" id="calcLeaks" style="width: 18px; height: 18px; accent-color: var(--aqua-primary); cursor: pointer;">
+                            <label for="calcLeaks" style="cursor: pointer; font-size: 0.95rem; color: var(--text-secondary);">
+                                We have a dripping faucet or pipe seep in the house (+28 L/day loss)
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Right: Results & Gauge Meter -->
+                    <div class="calc-results-col">
+                        <div>
+                            <div style="font-size: 0.85rem; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.08em;">
+                                Total Estimated Household Consumption
+                            </div>
+
+                            <!-- Circular SVG Gauge -->
+                            <div class="calc-gauge-box">
+                                <svg class="gauge-circle-svg" viewBox="0 0 200 200">
+                                    <defs>
+                                        <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#00f0ff" />
+                                            <stop offset="50%" stop-color="#0077b6" />
+                                            <stop offset="100%" stop-color="#06d6a0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="gauge-bg" cx="100" cy="100" r="90"></circle>
+                                    <circle class="gauge-bar" id="gaugeCircleBar" cx="100" cy="100" r="90"></circle>
+                                </svg>
+                                <div class="gauge-number-center">
+                                    <div class="gauge-number" id="calcDailyTotal">0</div>
+                                    <div class="gauge-unit">LITERS / DAY</div>
+                                </div>
+                            </div>
+
+                            <div id="calcGradeBadge" class="calc-grade-badge grade-moderate">
+                                Calculating Footprint...
+                            </div>
+                        </div>
+
+                        <!-- Breakdown Metrics -->
+                        <div class="calc-stat-breakdown">
+                            <div class="breakdown-item">
+                                <span style="color: var(--text-muted);">Per-Capita Daily:</span>
+                                <div class="breakdown-val" id="calcPerCapita">0 L / person</div>
+                            </div>
+                            <div class="breakdown-item">
+                                <span style="color: var(--text-muted);">WHO Benchmark:</span>
+                                <div class="breakdown-val" style="color: var(--seafoam);">135 L / person</div>
+                            </div>
+                            <div class="breakdown-item">
+                                <span style="color: var(--text-muted);">Monthly Projection:</span>
+                                <div class="breakdown-val" id="calcMonthly">0 m³</div>
+                            </div>
+                            <div class="breakdown-item">
+                                <span style="color: var(--text-muted);">Annual Total:</span>
+                                <div class="breakdown-val" id="calcAnnual">0 m³</div>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Personalized Advice Box -->
+                        <div id="calcPersonalizedTips" style="background: rgba(0,0,0,0.25); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.5rem; text-align: left;">
+                            <!-- Populated dynamically by calculator.js -->
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="calc-action-btns">
+                            <button id="saveAuditBtn" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-database"></i> Save Audit to Database
+                            </button>
+                            <button id="printAuditBtn" class="btn btn-outline" style="width: 100%;">
+                                <i class="fas fa-print"></i> Print Water Audit Certificate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Daily Water Saving Challenges -->
+            <div class="tab-panel" id="tabChallenges">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto 2.5rem auto;">
+                    <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Daily Water Action Checklist</h3>
+                    <p style="color: var(--text-secondary);">
+                        Check the conservation actions you completed today. The tracker computes total liters saved and stores your streak locally.
+                    </p>
+                    <div class="challenges-summary-badge" style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(6, 214, 160, 0.12); border: 1px solid rgba(6, 214, 160, 0.3); padding: 0.6rem 1.4rem; border-radius: var(--radius-full); margin-top: 1rem;">
+                        <i class="fas fa-trophy" style="color: var(--seafoam); font-size: 1.2rem;"></i>
+                        <span style="font-weight: 700; font-size: 1.05rem;">
+                            You have saved <span id="totalSavedLiters" style="color: var(--seafoam); font-family: 'JetBrains Mono', monospace; font-size: 1.25rem;">0</span> Liters Today!
+                        </span>
+                    </div>
+                </div>
+
+                <div class="challenges-grid">
+                    <!-- Challenge 1 -->
+                    <div class="challenge-card" data-challenge-id="c1" data-liters="18">
+                        <div class="challenge-checkbox"><i class=""></i></div>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Turn Off Tap While Brushing</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-secondary);">Turn off the sink tap while brushing teeth and lathering soap on hands.</p>
+                            <div class="challenge-savings">+18 Liters Saved</div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 2 -->
+                    <div class="challenge-card" data-challenge-id="c2" data-liters="35">
+                        <div class="challenge-checkbox"><i class=""></i></div>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">5-Minute Power Shower</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-secondary);">Trim your daily shower duration down to 5 minutes or use a bucket bath.</p>
+                            <div class="challenge-savings">+35 Liters Saved</div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 3 -->
+                    <div class="challenge-card" data-challenge-id="c3" data-liters="24">
+                        <div class="challenge-checkbox"><i class=""></i></div>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Bucket Car / Bike Cleaning</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-secondary);">Clean your automobile using a single bucket of water instead of a running hosepipe.</p>
+                            <div class="challenge-savings">+24 Liters Saved</div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 4 -->
+                    <div class="challenge-card" data-challenge-id="c4" data-liters="20">
+                        <div class="challenge-checkbox"><i class=""></i></div>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Reuse RO Reject Water</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-secondary);">Collect reverse osmosis discharge water in a bucket for mopping floors or plants.</p>
+                            <div class="challenge-savings">+20 Liters Saved</div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 5 -->
+                    <div class="challenge-card" data-challenge-id="c5" data-liters="30">
+                        <div class="challenge-checkbox"><i class=""></i></div>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Full Laundry Loads Only</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-secondary);">Run your washing machine only with full clothes load to avoid partial wasted cycles.</p>
+                            <div class="challenge-savings">+30 Liters Saved</div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 6 -->
+                    <div class="challenge-card" data-challenge-id="c6" data-liters="28">
+                        <div class="challenge-checkbox"><i class=""></i></div>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Report or Fix Leaking Faucet</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-secondary);">Inspect bathroom and kitchen fixtures and replace worn washer rings immediately.</p>
+                            <div class="challenge-savings">+28 Liters Saved</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button id="resetChallengesBtn" class="btn btn-outline" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">
+                        <i class="fas fa-redo"></i> Reset Today's Challenge Progress
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab 3: Academic Water Knowledge Quiz -->
+            <div class="tab-panel" id="tabQuiz">
+                <div class="quiz-box">
+                    <div class="quiz-header">
+                        <span class="quiz-q-num" id="quizQNum">Question 1 of 5</span>
+                        <span style="font-size: 0.85rem; color: var(--text-secondary);"><i class="fas fa-graduation-cap"></i> University Hydrology Quiz</span>
+                    </div>
+
+                    <div id="quizCardContent">
+                        <h3 class="quiz-question" id="quizQuestion">Loading question...</h3>
+                        <div class="quiz-options-list" id="quizOptionsContainer"></div>
+                        <div class="quiz-explanation" id="quizExplanation"></div>
+                        <div style="text-align: right;">
+                            <button id="quizNextBtn" class="btn btn-primary" style="display: none;">Next Question <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Score Box (Hidden initially) -->
+                    <div id="quizScoreBox" style="display: none;"></div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Hydrological Facts -->
+            <div class="tab-panel" id="tabFacts">
+                <div class="importance-grid">
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-globe"></i></div>
+                        <h4>Ancient Planetary Water</h4>
+                        <p>
+                            Nearly every drop of water on Earth today is over 4.5 billion years old, brought to our infant planet during early asteroid and comet bombardments during the Late Heavy Bombardment.
+                        </p>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-tshirt"></i></div>
+                        <h4>Virtual Water in Clothing</h4>
+                        <p>
+                            Manufacturing a single standard cotton T-shirt requires approximately 2,700 liters of freshwater across cotton cultivation, spinning, dyeing, and finishing—enough drinking water for one person for 900 days.
+                        </p>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-snowflake"></i></div>
+                        <h4>Antarctic Ice Storage</h4>
+                        <p>
+                            The Antarctic ice sheet holds approximately 90% of all the ice on the Earth's surface and roughly 70% of the entire world's freshwater reserves.
+                        </p>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Data Center Water Footprint</h4>
+                        <p>
+                            A medium-sized artificial intelligence cloud data center consumes over 1.1 million liters of potable water daily for evaporative server rack cooling towers.
+                        </p>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-tint"></i></div>
+                        <h4>Invisible Pipeline Losses</h4>
+                        <p>
+                            Globally, municipal distribution networks leak an estimated 126 billion cubic meters of treated potable water each year, valued at over \$39 billion USD.
+                        </p>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                        <h4>Tree Transpiration Engine</h4>
+                        <p>
+                            A single mature oak or banyan tree can transpire over 400 liters of subterranean water into the surrounding atmosphere daily, creating regional microclimates and inducing convective precipitation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         9. GALLERY SECTION
+         ====================================================================== -->
+    <section class="section" id="gallery" style="background: rgba(0, 0, 0, 0.15);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-camera"></i> Multimedia Visuals</div>
+                <h2 class="section-title">Hydrological <span class="text-gradient">Photo Gallery</span></h2>
+                <p class="section-subtitle">
+                    Explore high-definition imagery showcasing dynamic rivers, marine oceans, waterfall ecosystems, precision irrigation, and rainwater harvesting structures.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="gallery-filter-btn active" data-filter="all">All Visuals</button>
+                <button class="gallery-filter-btn" data-filter="surface">Rivers &amp; Lakes</button>
+                <button class="gallery-filter-btn" data-filter="oceans">Oceans &amp; Seas</button>
+                <button class="gallery-filter-btn" data-filter="waterfalls">Waterfalls</button>
+                <button class="gallery-filter-btn" data-filter="conservation">Conservation &amp; Tech</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Item 1: Surface River -->
+                <div class="gallery-item" data-category="surface" data-description="Pristine mountain alpine river illustrating clean surface water runoff feeding lower municipal reservoirs.">
+                    <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=800&q=80" alt="Mountain River Basin" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Surface Water</div>
+                        <div class="gallery-item-title">Alpine River Basin</div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Ocean Waves -->
+                <div class="gallery-item" data-category="oceans" data-description="Vast ocean swell displaying dynamic marine currents that circulate heat and maintain planetary climate equilibrium.">
+                    <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80" alt="Ocean Swell Waves" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Oceans &amp; Seas</div>
+                        <div class="gallery-item-title">Pacific Ocean Surge</div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Waterfall -->
+                <div class="gallery-item" data-category="waterfalls" data-description="Powerful natural waterfall demonstrating gravitational potential energy and high dissolved oxygen river ecology.">
+                    <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80" alt="Cascading Waterfall" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Waterfalls</div>
+                        <div class="gallery-item-title">Cascading Cataract</div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Raindrops -->
+                <div class="gallery-item" data-category="conservation" data-description="Direct atmospheric precipitation droplets harvested on glass panes, representing clean decentralized freshwater.">
+                    <img src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&w=800&q=80" alt="Raindrops on Glass" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Rainwater</div>
+                        <div class="gallery-item-title">Atmospheric Precipitation</div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Drip Irrigation / Modern Agriculture -->
+                <div class="gallery-item" data-category="conservation" data-description="Modern precision drip irrigation system delivering water directly to root matrices with minimum evaporative loss.">
+                    <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=80" alt="Precision Drip Irrigation Field" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Conservation Tech</div>
+                        <div class="gallery-item-title">Precision Drip Agriculture</div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Clean Water Spring -->
+                <div class="gallery-item" data-category="surface" data-description="Crystal clear natural spring water issuing from underground limestone aquifers with zero artificial contaminants.">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Underground Spring Pool" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Aquifer / Springs</div>
+                        <div class="gallery-item-title">Limestone Aquifer Spring</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox-modal" id="galleryLightboxModal">
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" id="lightboxCloseBtn">&times;</button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle" style="color: var(--text-primary); margin-bottom: 0.5rem;"></h3>
+                <p id="lightboxDesc" style="color: var(--text-secondary); font-size: 0.95rem;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         10. ABOUT PROJECT & B.TECH TEAM
+         ====================================================================== -->
+    <section class="section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-users-cog"></i> Academic Credentials</div>
+                <h2 class="section-title">About the <span class="text-gradient">Engineering Project</span></h2>
+                <p class="section-subtitle">
+                    Developed by Department of Computer Science &amp; Engineering students as an interdisciplinary initiative combining computer science, environmental engineering, and web development.
+                </p>
+            </div>
+
+            <!-- Project Meta Card -->
+            <div class="about-project-card">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <span class="brand-badge">CAPSTONE / PRESENTATION PROJECT</span>
+                        <h3 style="font-size: 1.8rem; margin: 0.5rem 0;">HydroSphere: Intelligent Water Resource &amp; Sustainable Management Portal</h3>
+                        <p style="color: var(--text-secondary); max-width: 850px;">
+                            <strong>Project Objective:</strong> To build a full-stack, university-grade educational web portal integrating interactive mathematical water footprint calculators, real-time relational MySQL database storage, environmental hydrology research, and responsive glassmorphic UI architecture to spread water conservation awareness.
+                        </p>
+                    </div>
+                    <div style="text-align: right;">
+                        <button class="btn btn-outline" id="openDbInspectorBtn">
+                            <i class="fas fa-database"></i> View Live MySQL Feed
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">Department / Program</div>
+                        <div class="meta-val">B.Tech Computer Science &amp; Engg.</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Academic Year</div>
+                        <div class="meta-val">2026 – 2027 (Final Review)</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Core Tech Stack</div>
+                        <div class="meta-val">HTML5, CSS3, JS, PHP, MySQL, Bootstrap</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Project Guide / Mentor</div>
+                        <div class="meta-val">Prof. Dr. K. V. Narayana (Ph.D)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Members Grid -->
+            <div class="team-grid">
+                <!-- Member 1: Team Lead -->
+                <div class="glass-card team-card">
+                    <div class="member-avatar">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Team Lead Avatar">
+                    </div>
+                    <h4 class="member-name">Aarav Mehta</h4>
+                    <div class="member-role">Team Lead &amp; System Architect</div>
+                    <div class="member-reg">Roll: 23BCE1042</div>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="member-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="member-social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 2: Frontend Architect -->
+                <div class="glass-card team-card">
+                    <div class="member-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Frontend Architect Avatar">
+                    </div>
+                    <h4 class="member-name">Rohan Varma</h4>
+                    <div class="member-role">Frontend &amp; UI/UX Specialist</div>
+                    <div class="member-reg">Roll: 23BCE1078</div>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="member-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="member-social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 3: Backend & Database -->
+                <div class="glass-card team-card">
+                    <div class="member-avatar">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Backend Developer Avatar">
+                    </div>
+                    <h4 class="member-name">Sneha Kulkarni</h4>
+                    <div class="member-role">Backend &amp; Database Engineer</div>
+                    <div class="member-reg">Roll: 23BCE1105</div>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="member-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="member-social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 4: Hydrology Research -->
+                <div class="glass-card team-card">
+                    <div class="member-avatar">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Researcher Avatar">
+                    </div>
+                    <h4 class="member-name">Vikramaditya Roy</h4>
+                    <div class="member-role">Hydrology Research &amp; Analytics</div>
+                    <div class="member-reg">Roll: 23BCE1142</div>
+                    <div class="member-socials">
+                        <a href="#" class="member-social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="member-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="member-social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         11. DATABASE, CONTACT & FEEDBACK
+         ====================================================================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <!-- Live Database Status Bar for Presentation -->
+            <div class="live-db-pill-bar">
+                <div class="db-status-indicator">
+                    <span class="status-dot"></span>
+                    <span>MySQL Database Engine: <strong>Active &amp; Connected</strong> (Table: contact_messages, feedback_reviews)</span>
+                </div>
+                <div>
+                    <button class="btn btn-outline" id="openDbInspectorBtn2" style="padding: 0.45rem 1.1rem; font-size: 0.82rem;">
+                        <i class="fas fa-terminal"></i> Open Live Presentation DB Inspector
+                    </button>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-comments"></i> Communication &amp; Evaluation</div>
+                <h2 class="section-title">Contact &amp; <span class="text-gradient">Project Feedback</span></h2>
+                <p class="section-subtitle">
+                    Leave your feedback for our B.Tech evaluation team or submit an inquiry. Submissions are processed through our PHP backend and stored directly in MySQL.
+                </p>
+            </div>
+
+            <div class="contact-feedback-grid">
+                <!-- Form 1: Contact Form -->
+                <div class="form-glass">
+                    <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.6rem;">
+                        <i class="fas fa-paper-plane" style="color: var(--aqua-primary);"></i> Send a Message / Query
+                    </h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                        Stored in table <code>contact_messages</code> with timestamp and category.
+                    </p>
+
+                    <div id="contactAlertBox" style="display: none; padding: 0.85rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;"></div>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" name="full_name" class="form-control" placeholder="e.g. Dr. Ramesh Sharma" required>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-6 form-group">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" name="email" class="form-control" placeholder="name@college.edu" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label class="form-label">Phone / WhatsApp</label>
+                                <input type="tel" name="phone" class="form-control" placeholder="+91 98765 43210">
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-6 form-group">
+                                <label class="form-label">Inquiry Category</label>
+                                <select name="category" class="form-control">
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Academic Research">Academic Research</option>
+                                    <option value="Conservation Initiative">Conservation Initiative</option>
+                                    <option value="Technical Issue">Technical Feedback</option>
+                                    <option value="Collaboration">Project Collaboration</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label class="form-label">Subject *</label>
+                                <input type="text" name="subject" class="form-control" placeholder="Topic of discussion" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Detailed Message *</label>
+                            <textarea name="message" class="form-control" rows="4" placeholder="Write your message here (min. 10 characters)..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Submit to MySQL Database
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Form 2: Feedback & Evaluation Rating -->
+                <div class="form-glass">
+                    <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.6rem;">
+                        <i class="fas fa-star" style="color: #ffb703;"></i> Presentation Rating &amp; Review
+                    </h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                        Professors, faculty, and peers can rate this website. Stored in <code>feedback_reviews</code>.
+                    </p>
+
+                    <div id="feedbackAlertBox" style="display: none; padding: 0.85rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;"></div>
+
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label class="form-label">Your Name *</label>
+                            <input type="text" name="user_name" class="form-control" placeholder="e.g. Prof. K. V. Narayana" required>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-6 form-group">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" name="user_email" class="form-control" placeholder="evaluator@university.edu" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label class="form-label">Your Role / Designation</label>
+                                <select name="user_role" class="form-control">
+                                    <option value="Faculty/Professor">Faculty / Professor</option>
+                                    <option value="Student">Student / Peer</option>
+                                    <option value="Researcher">Hydrology Researcher</option>
+                                    <option value="Environmentalist">Environmentalist</option>
+                                    <option value="General Public">General Visitor</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Rating Stars -->
+                        <div class="form-group">
+                            <label class="form-label">Overall Project Rating (Click to Rate)</label>
+                            <div class="rating-stars" id="ratingStars">
+                                <button type="button" class="star-btn active" data-star="1"><i class="fas fa-star"></i></button>
+                                <button type="button" class="star-btn active" data-star="2"><i class="fas fa-star"></i></button>
+                                <button type="button" class="star-btn active" data-star="3"><i class="fas fa-star"></i></button>
+                                <button type="button" class="star-btn active" data-star="4"><i class="fas fa-star"></i></button>
+                                <button type="button" class="star-btn active" data-star="5"><i class="fas fa-star"></i></button>
+                            </div>
+                            <input type="hidden" id="selectedRatingInput" value="5">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Evaluation Category</label>
+                            <select name="feedback_category" class="form-control">
+                                <option value="Website UI & Architecture">Website UI &amp; Architecture</option>
+                                <option value="Hydrological Technical Depth">Hydrological Technical Depth</option>
+                                <option value="Interactive Calculator Experience">Interactive Calculator Experience</option>
+                                <option value="Full-Stack Backend Integration">Full-Stack Backend Integration</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Review Comments / Evaluation Notes *</label>
+                            <textarea name="comments" class="form-control" rows="3" placeholder="Provide constructive comments for our B.Tech evaluation..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-emerald" style="width: 100%;">
+                            <i class="fas fa-check-circle"></i> Submit Review &amp; Star Rating
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         12. CONCLUSION SECTION
+         ====================================================================== -->
+    <section class="section" id="conclusion">
+        <div class="container">
+            <div class="conclusion-banner">
+                <div class="bob-animation" style="font-size: 3.5rem; color: var(--aqua-primary); margin-bottom: 1.25rem;">
+                    <i class="fas fa-hand-holding-water"></i>
+                </div>
+                <h2 class="conclusion-title">
+                    "SAVE WATER, <span class="text-gradient">SAVE LIFE.</span>"
+                </h2>
+                <p class="conclusion-text">
+                    Water is not an infinite inheritance—it is a finite, fragile loan from future generations. Technological innovation in computer science and IoT sensor grids, combined with individual behavioral accountability, is our most potent strategy to avert global hydrological collapse.
+                </p>
+
+                <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+                    <button class="btn btn-primary open-pledge-trigger">
+                        <i class="fas fa-tint"></i> Take the Conservation Pledge Today
+                    </button>
+                    <a href="#interactive" class="btn btn-outline">
+                        <i class="fas fa-calculator"></i> Re-audit Your Daily Consumption
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         FOOTER
+         ====================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand & Academic Info -->
+                <div class="footer-brand">
+                    <div class="nav-brand" style="margin-bottom: 1rem;">
+                        <div class="brand-icon"><i class="fas fa-water"></i></div>
+                        <div>
+                            <span>AQUA<span style="color: var(--aqua-primary);">MANAGE</span></span>
+                            <span class="brand-badge">B.TECH CSE</span>
+                        </div>
+                    </div>
+                    <p>
+                        A premier academic project dedicated to sustainable hydrological resource management, smart water telemetry, and community awareness.
+                    </p>
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">
+                        Developed for Academic Capstone &amp; Environmental Engineering Presentation.
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Jump Links -->
+                <div class="footer-col">
+                    <h4>Curriculum Sections</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home Portal</a></li>
+                        <li><a href="#intro">Hydrological Intro</a></li>
+                        <li><a href="#types">Water Resource Types</a></li>
+                        <li><a href="#importance">Sectoral Importance</a></li>
+                        <li><a href="#problems">Global Crisis Analysis</a></li>
+                        <li><a href="#conservation">Conservation Methods</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Interactive Tools -->
+                <div class="footer-col">
+                    <h4>Interactive Suite</h4>
+                    <ul class="footer-links">
+                        <li><a href="#interactive">Water Footprint Calculator</a></li>
+                        <li><a href="#interactive">Daily Savings Challenges</a></li>
+                        <li><a href="#interactive">University Water Quiz</a></li>
+                        <li><a href="#interactive">Scientific Facts</a></li>
+                        <li><a href="#gallery">High-Res Image Gallery</a></li>
+                        <li><a href="#team">Engineering Team Profile</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & University Information -->
+                <div class="footer-col">
+                    <h4>Department Contact</h4>
+                    <ul class="footer-links" style="font-size: 0.88rem;">
+                        <li><i class="fas fa-university" style="color: var(--aqua-primary); margin-right: 8px;"></i> Dept. of Computer Science &amp; Engg.</li>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--aqua-primary); margin-right: 8px;"></i> College of Engineering &amp; Technology</li>
+                        <li><i class="fas fa-envelope" style="color: var(--aqua-primary); margin-right: 8px;"></i> cse.waterproject@college.edu</li>
+                        <li><i class="fas fa-phone-alt" style="color: var(--aqua-primary); margin-right: 8px;"></i> +91 (0) 1234-567890</li>
+                        <li><i class="fas fa-life-ring" style="color: var(--seafoam); margin-right: 8px;"></i> Emergency Water Helpline: 1800-11-2200</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 – 2027 <strong>AQUAMANAGE</strong> &bull; All Rights Reserved. Built with HTML5, CSS3, JavaScript, PHP &amp; MySQL.
+                </div>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <span>Faculty Guide: Prof. Dr. K. V. Narayana</span> &bull;
+                    <span style="color: var(--aqua-primary); cursor: pointer;" class="open-pledge-trigger">Pledges Taken: <strong id="livePledgeCount">142</strong></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ======================================================================
+         MODAL 1: WATER CONSERVATION PLEDGE
+         ====================================================================== -->
+    <div class="lightbox-modal" id="pledgeModal">
+        <div class="lightbox-content" style="max-width: 600px; padding: 2.5rem;">
+            <button class="lightbox-close-btn" id="closePledgeModalBtn">&times;</button>
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+                <div style="font-size: 2.5rem; color: var(--aqua-primary); margin-bottom: 0.5rem;">
+                    <i class="fas fa-hand-holding-water"></i>
+                </div>
+                <h3 style="font-size: 1.6rem; color: var(--text-primary); margin-bottom: 0.4rem;">Take the Water Conservation Pledge</h3>
+                <p style="color: var(--text-secondary); font-size: 0.92rem;">
+                    Commit to save water daily. Your pledge will be recorded in our MySQL database.
+                </p>
+            </div>
+
+            <form id="pledgeForm">
+                <div class="form-group">
+                    <label class="form-label">Your Full Name *</label>
+                    <input type="text" name="pledge_name" class="form-control" placeholder="e.g. Aarav Mehta" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">College / Institution *</label>
+                    <input type="text" name="pledge_institution" class="form-control" placeholder="e.g. Dept. of CSE, Engineering Campus" required>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md-6 form-group">
+                        <label class="form-label">Target Liters to Save / Day</label>
+                        <select name="pledge_liters" class="form-control">
+                            <option value="30">30 Liters / day (Basic)</option>
+                            <option value="60" selected>60 Liters / day (Moderate)</option>
+                            <option value="100">100 Liters / day (Eco-Champion)</option>
+                            <option value="150">150+ Liters / day (Household)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label class="form-label">Key Conservation Action</label>
+                        <select name="pledge_action" class="form-control">
+                            <option value="Turn off tap while brushing & 5-min showers">5-Minute Showers & Tap Control</option>
+                            <option value="Install low-flow aerators on faucets">Install Faucet Aerators</option>
+                            <option value="Reuse RO discharge water for plants">Reuse RO Reject Water</option>
+                            <option value="Fix all leaky toilet valves immediately">Fix Household Leaks</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    <i class="fas fa-check"></i> Register My Pledge in Database
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         MODAL 2: LIVE DATABASE INSPECTOR (FOR PROFESSOR PRESENTATION)
+         ====================================================================== -->
+    <div class="lightbox-modal" id="dbInspectorModal">
+        <div class="lightbox-content" style="max-width: 960px; max-height: 85vh; overflow-y: auto; padding: 2.5rem;">
+            <button class="lightbox-close-btn" id="closeDbInspectorBtn">&times;</button>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-glass); padding-bottom: 1rem;">
+                <div>
+                    <h3 style="font-size: 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.6rem;">
+                        <i class="fas fa-server" style="color: var(--aqua-primary);"></i> Live MySQL Database Inspector
+                    </h3>
+                    <div id="dbSummaryInfo" style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.3rem;">
+                        Fetching real-time records from tables...
+                    </div>
+                </div>
+                <div>
+                    <button id="refreshDbBtn" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">
+                        <i class="fas fa-sync-alt"></i> Refresh Feed
+                    </button>
+                </div>
+            </div>
+
+            <div id="dbInspectorTableContainer">
+                <!-- Populated dynamically by api-client.js -->
+            </div>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(0, 240, 255, 0.06); border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-secondary);">
+                <strong>Faculty Evaluation Note:</strong> This live feed directly queries the MySQL tables (<code>contact_messages</code>, <code>feedback_reviews</code>, <code>water_usage_records</code>, <code>water_pledges</code>) through PHP PDO prepared statements. In offline / static preview mode, it gracefully operates via synchronous simulated client storage.
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/interactive.js"></script>
+    <script src="js/api-client.js"></script>
+
+    <!-- Connect second inspector button -->
+    <script>
+        document.getElementById('openDbInspectorBtn2')?.addEventListener('click', () => {
+            document.getElementById('openDbInspectorBtn')?.click();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* ==========================================================================
+   WATER RESOURCES AND MANAGEMENT - ANIMATIONS & FX
+   Dynamic SVG Waves, Floating Bubbles, 3D Depth, Shimmer, Glowing Pulses
+   ========================================================================== */
+
+/* 1. Layered Moving SVG Waves */
+.waves-animation-container {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.wave-parallax > use {
+    animation: moveForever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.wave-parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    fill: rgba(0, 240, 255, 0.15);
+}
+
+.wave-parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    fill: rgba(0, 180, 216, 0.25);
+}
+
+.wave-parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    fill: rgba(0, 119, 182, 0.45);
+}
+
+.wave-parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    fill: var(--bg-primary);
+}
+
+@keyframes moveForever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/* 2. Floating Bubbles Keyframes */
+@keyframes floatBubble {
+    0% {
+        transform: translateY(100vh) translateX(0) scale(0.6);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.6;
+    }
+    85% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-10vh) translateX(50px) scale(1.1);
+        opacity: 0;
+    }
+}
+
+.bubble-particle {
+    position: absolute;
+    bottom: -50px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(0, 240, 255, 0.2) 60%, rgba(0, 119, 182, 0.1) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.4), inset 0 0 6px rgba(255, 255, 255, 0.6);
+    animation: floatBubble 14s infinite linear;
+}
+
+/* 3. Ripple Effect */
+@keyframes rippleEffect {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* 4. Pulse Dot */
+@keyframes pulseDot {
+    0% {
+        box-shadow: 0 0 0 0 rgba(6, 214, 160, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(6, 214, 160, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(6, 214, 160, 0);
+    }
+}
+
+/* 5. Fluid Glow Ambient */
+@keyframes fluidGlow {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translate(30px, -20px) scale(1.15);
+        opacity: 0.35;
+    }
+}
+
+.ambient-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 1;
+    animation: fluidGlow 12s ease-in-out infinite alternate;
+}
+
+/* 6. Bobbing Droplet Animation */
+@keyframes waterBob {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.bob-animation {
+    animation: waterBob 3.5s ease-in-out infinite;
+}
+
+/* 7. Tab Fade in */
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 8. Scroll Reveal Classes */
+.reveal-init {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delay classes */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* 9. Shimmering Gradient for Badges */
+@keyframes shimmerText {
+    0% {
+        background-position: -200% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.shimmer-badge {
+    background: linear-gradient(90deg, #00f0ff 0%, #ffffff 50%, #00b4d8 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerText 5s linear infinite;
+}
+
+/* 10. Water Ripple Overlay for Cards */
+.water-ripple-layer {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 240, 255, 0.12), transparent 45%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.glass-card:hover .water-ripple-layer {
+    opacity: 1;
+}
