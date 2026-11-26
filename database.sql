@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `water_usage_records` (
     `monthly_liters` DECIMAL(12, 2) NOT NULL,
     `annual_liters` DECIMAL(14, 2) NOT NULL,
     `per_capita_daily` DECIMAL(10, 2) NOT NULL,
-    `efficiency_grade` ENUM('Excellent (Eco-Hero)', 'Moderate (Conscious)', 'High Consumption', 'Critical Wastage') NOT NULL,
+    `efficiency_grade` VARCHAR(100) NOT NULL,
     `breakdown_json` JSON DEFAULT NULL,
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     INDEX `idx_efficiency` (`efficiency_grade`)
