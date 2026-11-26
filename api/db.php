@@ -17,11 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // Database Credentials
-// Reads from server environment variables; defaults to verified local configuration
+// Credentials MUST be set via server environment variables or local web server configuration
 $host     = getenv('DB_HOST') ?: '127.0.0.1';
 $dbname   = getenv('DB_NAME') ?: 'water_management_db';
 $username = getenv('DB_USER') ?: 'root';
-$password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : '178076';
+$password = getenv('DB_PASS') ?: '';
 $port     = getenv('DB_PORT') ?: '3306';
 
 $dsn = "mysql:host={$host};port={$port};dbname={$dbname};charset=utf8mb4";
