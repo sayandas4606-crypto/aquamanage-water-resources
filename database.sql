@@ -94,6 +94,8 @@ INSERT INTO `feedback_reviews` (`user_name`, `user_email`, `user_role`, `rating`
 ('Pooja Nair', 'pooja.nair@engg.edu', 'Student', 5, 'Interactive Calculator', 'Calculated my household consumption and discovered our leaky faucet was wasting 24 liters daily. Highly engaging and informative!', 1);
 
 INSERT INTO `water_pledges` (`full_name`, `institution`, `target_liters_to_save`, `pledge_action`) VALUES
-('Aarav Mehta', 'B.Tech CSE - Final Year', 120, 'Turn off tap while brushing & 5-minute showers'),
-('Sneha Patel', 'Dept. of Environmental Engg', 85, 'Installed low-flow aerators on all home faucets'),
-('Vikramaditya Roy', 'IIT Roorkee Scholar', 200, 'Reusing kitchen RO reject water for gardening and floor washing');
+('Sayan Das', 'Techno India University, West Bengal', 100, 'Installed faucet aerators & promoting campus water audit'),
+('Tamras Kar', 'Techno India University, West Bengal', 75, 'Turn off tap while brushing & 5-minute showers'),
+('Sneha Sheet', 'Techno India University, West Bengal', 60, 'Reusing kitchen RO reject water for gardening'),
+('Dipwanita Sarkar', 'Techno India University, West Bengal', 80, 'Fixed leaky bathroom valves & daily savings challenge'),
+('Ankita Mandal', 'Techno India University, West Bengal', 70, 'Running washing machine on full loads only');

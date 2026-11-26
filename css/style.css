@@ -1560,39 +1560,65 @@ img {
 /* Team Members Grid */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .team-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 .team-card {
     text-align: center;
-    padding: 2.25rem 1.5rem;
+    padding: 2.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .member-avatar {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     margin: 0 auto 1.25rem auto;
     position: relative;
     border: 3px solid var(--aqua-primary);
     overflow: hidden;
     box-shadow: 0 0 20px var(--cyan-glow);
+    background: rgba(3, 14, 30, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: var(--transition-smooth);
+}
+
+.team-card:hover .member-avatar {
+    transform: scale(1.06);
+    border-color: #ffffff;
+    box-shadow: 0 0 30px var(--cyan-glow);
 }
 
 .member-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .member-name {
     font-size: 1.2rem;
+    font-weight: 700;
     margin-bottom: 0.35rem;
+    color: var(--text-primary);
 }
 
 .member-role {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     color: var(--aqua-primary);
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -1600,35 +1626,15 @@ img {
 
 .member-reg {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    color: var(--text-muted);
-}
-
-.member-socials {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-    margin-top: 1.2rem;
-}
-
-.member-social-link {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid var(--border-glass);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 0.82rem;
+    font-weight: 600;
     color: var(--text-secondary);
-    font-size: 0.85rem;
-    transition: var(--transition-fast);
-}
-
-.member-social-link:hover {
-    background: var(--aqua-primary);
-    color: #030e1e;
-    transform: translateY(-2px);
+    background: rgba(0, 240, 255, 0.08);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-glass);
+    display: inline-block;
+    margin-top: 0.4rem;
 }
 
 /* ==========================================================================

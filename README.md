@@ -171,14 +171,16 @@ When presenting this project to your college professors and evaluation panel, hi
 
 ## 👥 8. Project Credits
 
-- **Course:** B.Tech Computer Science & Engineering (Final Year Capstone)
-- **Academic Year:** 2026 – 2027
-- **Faculty Mentor:** Prof. Dr. K. V. Narayana (Department of CSE)
+- **Project:** AQUAMANAGE – Water Resources and Management
+- **University:** Techno India University, West Bengal
+- **Location:** Kolkata, West Bengal, India
+- **Department:** Department of Computer Science & Engineering
 - **Team Members:**
-  - Aarav Mehta (Lead Architect & Full Stack Developer)
-  - Rohan Varma (Frontend & UI/UX Specialist)
-  - Sneha Kulkarni (Database & Backend Engineer)
-  - Vikramaditya Roy (Hydrology Research & Analytics)
+  1. **Tamras Kar** (Roll No: 251001001023) — Project Team Member
+  2. **Sneha Sheet** (Roll No: 251001001160) — Project Team Member
+  3. **Dipwanita Sarkar** (Roll No: 251001001129) — Project Team Member
+  4. **Sayan Das** (Roll No: 251001001132) — Project Team Member
+  5. **Ankita Mandal** (Roll No: 251001001128) — Project Team Member
 
 ---
 *“Every Drop Counts. Every Action Matters. SAVE WATER, SAVE LIFE.”*

@@ -5,9 +5,12 @@
 
 /* Large Tablets & Small Laptops (<= 1199px) */
 @media (max-width: 1199px) {
-    .types-grid,
-    .team-grid {
+    .types-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .hero-stats-grid {
@@ -78,7 +81,8 @@
     .importance-grid,
     .problems-grid,
     .conservation-grid,
-    .gallery-grid {
+    .gallery-grid,
+    .team-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 

@@ -197,7 +197,7 @@
                 ];
 
                 const initialPledges = [
-                    { id: 1, full_name: 'Aarav Mehta', institution: 'B.Tech CSE - Final Year', target_liters_to_save: 120, pledge_action: 'Turn off tap while brushing & 5-minute showers', created_at: '2026-11-22 10:20:00' }
+                    { id: 1, full_name: 'Sayan Das', institution: 'Techno India University, West Bengal', target_liters_to_save: 100, pledge_action: 'Installed faucet aerators & promoting campus water audit', created_at: '2026-11-22 10:20:00' }
                 ];
 
                 return {
