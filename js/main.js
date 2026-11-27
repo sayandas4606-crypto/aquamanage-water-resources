@@ -80,11 +80,26 @@ function initNavbar() {
             }
         });
 
-        links.forEach(link => {
+        const allClickableLinks = document.querySelectorAll('.nav-link:not(.nav-dropdown-toggle), .dropdown-item');
+        allClickableLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     mobileToggle.querySelector('i').className = 'fas fa-bars';
+                }
+            });
+        });
+
+        // Mobile dropdown toggle
+        const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 1240) {
+                    e.preventDefault();
+                    const parent = toggle.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('open');
+                    }
                 }
             });
         });

@@ -85,7 +85,7 @@
     </div>
 
     <!-- ======================================================================
-         NAVIGATION BAR
+         NAVIGATION BAR (Dropdown Architecture for Zero Horizontal Overflow)
          ====================================================================== -->
     <nav class="navbar" id="mainNavbar">
         <div class="nav-container">
@@ -101,16 +101,35 @@
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#intro" class="nav-link">Introduction</a></li>
-                <li><a href="#understanding" class="nav-link">Hydrology</a></li>
-                <li><a href="#types" class="nav-link">Resources</a></li>
-                <li><a href="#importance" class="nav-link">Importance</a></li>
-                <li><a href="#challenges" class="nav-link">Challenges</a></li>
-                <li><a href="#harvesting" class="nav-link">Harvesting</a></li>
-                <li><a href="#recharge" class="nav-link">Recharge</a></li>
-                <li><a href="#sustainable" class="nav-link">Management</a></li>
-                <li><a href="#technologies" class="nav-link">Smart Tech</a></li>
-                <li><a href="#conservation" class="nav-link">Conservation</a></li>
+
+                <!-- Dropdown 1: Academic Overview -->
+                <li class="nav-dropdown">
+                    <a href="#intro" class="nav-link nav-dropdown-toggle">
+                        Overview <i class="fas fa-chevron-down nav-caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#intro" class="dropdown-item"><i class="fas fa-book-open"></i> Introduction</a></li>
+                        <li><a href="#understanding" class="dropdown-item"><i class="fas fa-microscope"></i> Hydrology Science</a></li>
+                        <li><a href="#types" class="dropdown-item"><i class="fas fa-sitemap"></i> Water Resources</a></li>
+                        <li><a href="#importance" class="dropdown-item"><i class="fas fa-heartbeat"></i> Societal Importance</a></li>
+                        <li><a href="#challenges" class="dropdown-item"><i class="fas fa-exclamation-triangle"></i> Global Challenges</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown 2: Engineering & Tech -->
+                <li class="nav-dropdown">
+                    <a href="#harvesting" class="nav-link nav-dropdown-toggle">
+                        Engineering &amp; Tech <i class="fas fa-chevron-down nav-caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#harvesting" class="dropdown-item"><i class="fas fa-cloud-download-alt"></i> Rainwater Harvesting</a></li>
+                        <li><a href="#recharge" class="dropdown-item"><i class="fas fa-arrow-circle-down"></i> Groundwater Recharge</a></li>
+                        <li><a href="#sustainable" class="dropdown-item"><i class="fas fa-balance-scale"></i> Sustainable IWRM</a></li>
+                        <li><a href="#technologies" class="dropdown-item"><i class="fas fa-microchip"></i> Modern Technologies</a></li>
+                        <li><a href="#conservation" class="dropdown-item"><i class="fas fa-leaf"></i> Water Conservation</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#interactive" class="nav-link">Calculator</a></li>
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#team" class="nav-link">Team</a></li>
@@ -138,7 +157,7 @@
          1. HERO SECTION (#home)
          ====================================================================== -->
     <header class="hero-section" id="home">
-        <!-- Interactive Canvas for Floating Bubbles & Wave Physics -->
+        <!-- Interactive Canvas for Floating Bubbles & Wave Physics (Absolute Layer) -->
         <canvas id="waterCanvas" class="hero-canvas"></canvas>
 
         <div class="hero-content container">
@@ -217,7 +236,7 @@
                             What Are Water Resources?
                         </h3>
                         <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.2rem;">
-                            Water resources are natural reservoirs and sources of water ($H_2O$) on Earth that are potentially or directly useful to humans and ecological communities. Water functions as the primary universal solvent, driving terrestrial metabolism, thermal homeostasis, vegetative biomass production, and mineral transport.
+                            Water resources are natural reservoirs and sources of water (H<sub>2</sub>O) on Earth that are potentially or directly useful to humans and ecological communities. Water functions as the primary universal solvent, driving terrestrial metabolism, thermal homeostasis, vegetative biomass production, and mineral transport.
                         </p>
                         <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.2rem;">
                             From an environmental engineering perspective, water resources are classified based on their salinity, replenishment dynamics, and accessibility. While approximately 71% of Earth's surface is covered by water, more than 99% of that volume is either highly saline or locked in polar ice caps, leaving less than 1% readily accessible for human socioeconomic development.
@@ -246,7 +265,7 @@
                                 <div class="progress-bar-bg" style="height: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 99px; overflow: hidden;">
                                     <div style="width: 97.5%; height: 100%; background: linear-gradient(90deg, #0077b6, #0096c7); border-radius: 99px;"></div>
                                 </div>
-                                <span style="font-size: 0.8rem; color: var(--text-muted);">~1,351,000,000 km³ — Inaccessible for drinking or agriculture without energy-intensive desalination.</span>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">&approx; 1,351,000,000 km<sup>3</sup> &mdash; Inaccessible for drinking or agriculture without energy-intensive desalination.</span>
                             </div>
 
                             <div class="dist-item" style="margin-bottom: 1.2rem;">
@@ -592,7 +611,7 @@
                             <i class="fas fa-biohazard" style="color: var(--coral-accent);"></i> Point &amp; Non-Point Pollution
                         </h4>
                         <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
-                            Over 80% of municipal wastewater in developing nations enters surface rivers untreated. Agricultural runoff rich in nitrogen ($N$) and phosphorus ($P$) triggers eutrophication, algal blooms, and oceanic dead zones, while persistent microplastics infiltrate aquatic food webs.
+                            Over 80% of municipal wastewater in developing nations enters surface rivers untreated. Agricultural runoff rich in nitrogen (N) and phosphorus (P) triggers eutrophication, algal blooms, and oceanic dead zones, while persistent microplastics infiltrate aquatic food webs.
                         </p>
                     </div>
                 </div>
@@ -699,11 +718,11 @@
                         <div class="formula-parameters-box" style="background: rgba(3, 14, 30, 0.6); padding: 1.5rem; border-radius: var(--radius-md);">
                             <h4 style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 0.8rem;"><i class="fas fa-sliders-h"></i> Parameter Definitions:</h4>
                             <ul style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; padding-left: 1.2rem; margin: 0;">
-                                <li><strong>V:</strong> Total harvestable water volume per year (Liters or $m^3$).</li>
-                                <li><strong>A:</strong> Projected horizontal catchment area ($m^2$).</li>
-                                <li><strong>R:</strong> Mean annual local precipitation ($mm$) (e.g., Kolkata: ~1,600 mm).</li>
+                                <li><strong>V:</strong> Total harvestable water volume per year (Liters or m<sup>3</sup>).</li>
+                                <li><strong>A:</strong> Projected horizontal catchment area (m<sup>2</sup>).</li>
+                                <li><strong>R:</strong> Mean annual local precipitation (mm) (e.g., Kolkata: ~1,600 mm).</li>
                                 <li><strong>C:</strong> Runoff coefficient (Reinforced concrete: 0.85; Galvanized iron sheet: 0.90; Clay tiles: 0.70; Paved earth: 0.50).</li>
-                                <li><strong>&eta;:</strong> First-flush rejection and multi-barrier filtration efficiency ($pprox 0.85 - 0.90$).</li>
+                                <li><strong>&eta;:</strong> First-flush rejection and multi-barrier filtration efficiency (&approx; 0.85 &ndash; 0.90).</li>
                             </ul>
                         </div>
                     </div>
@@ -799,13 +818,13 @@
                         <i class="fas fa-chart-line" style="font-size: 3rem; color: var(--aqua-primary); margin-bottom: 1rem;"></i>
                         <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Piezometric Monitoring</h4>
                         <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
-                            Piezometer observation wells track static water levels ($SWL$) before and after monsoon seasons to quantify net artificial recharge volume and evaluate regional storage recovery.
+                            Piezometer observation wells track static water levels (SWL) before and after monsoon seasons to quantify net artificial recharge volume and evaluate regional storage recovery.
                         </p>
                         <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--seafoam); background: rgba(0,0,0,0.3); padding: 0.6rem; border-radius: var(--radius-sm); margin-top: 1rem;">
-                            &Delta;V = &Delta;h &times; A &times; S_y
+                            &Delta;V = &Delta;h &times; A &times; S<sub>y</sub>
                         </div>
                         <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.4rem;">
-                            where &Delta;h = water level rise, A = aquifer area, S_y = specific yield.
+                            where &Delta;h = water level rise, A = aquifer area, S<sub>y</sub> = specific yield.
                         </span>
                     </div>
                 </div>
@@ -1264,7 +1283,7 @@
                     </div>
                 </div>
 
-                <!-- Daily Checklist Column (Fully matching interactive.js challenge-card DOM) -->
+                <!-- Daily Checklist Column -->
                 <div class="col-lg-6">
                     <div class="glass-card" style="padding: 2.2rem; height: 100%;">
                         <div class="d-flex justify-content-between align-items-center mb-3">
