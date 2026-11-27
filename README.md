@@ -1,186 +1,101 @@
-# Water Resources and Management (AQUAMANAGE)
-### B.Tech Computer Science & Engineering — Capstone / Educational Presentation Portal
-**Theme:** Ocean Blue, Electric Aqua, Clean White, Dark Navy  
-**Target:** University-Level Evaluation & Public Environmental Awareness  
-**Alignment:** United Nations Sustainable Development Goal (SDG) 6: Clean Water and Sanitation  
+# AQUAMANAGE – Water Resources and Management
+### B.Tech Computer Science & Engineering &bull; Environmental Engineering Capstone Project
+**University:** Techno India University, West Bengal  
+**Location:** Kolkata, West Bengal, India  
+**Theme:** Ocean Blue, Electric Cyan, Clean White, Dark Navy  
+**Academic Focus:** United Nations Sustainable Development Goal 6 (SDG 6: Clean Water and Sanitation)  
+**Live Production URL:** [https://sayandas4606-crypto.github.io/aquamanage-water-resources/](https://sayandas4606-crypto.github.io/aquamanage-water-resources/)  
 
 ---
 
 ## 🌟 1. Project Overview
 
-**HydroSphere: Water Resources & Management** is a full-stack, responsive, university-grade educational web portal. Built specifically for an engineering college group presentation, it combines hydrological science with modern computer science architectures:
-- **Rich Hydrological Curriculum:** 12 structured academic sections covering planetary water distribution, aquifers, surface waters, precision agricultural irrigation, global crises, and conservation technologies.
-- **Interactive Suite:** A real-time mathematical Water Footprint Calculator with World Health Organization (WHO) benchmarks, daily water-saving challenge tracker, academic water quiz, and filterable image gallery with fullscreen lightbox.
-- **Full-Stack Database Architecture:** Real-time data recording using PHP (PDO) and a normalized MySQL relational database for contact inquiries, peer/faculty feedback, conservation pledges, and water usage records.
-- **Live Presentation Inspector:** An embedded live database viewer allowing presenters to show MySQL table insertions to their professors in real time!
-- **Universal Dual-Mode Compatibility:** Operates seamlessly when served through full LAMP/WAMP/XAMPP stacks, and features graceful client-side simulation when previewed in standalone static environments.
+**AQUAMANAGE** is an interactive, full-stack, responsive educational engineering web portal developed for an academic group presentation at **Techno India University, West Bengal**. It synthesizes hydrological sciences, environmental conservation, and modern computer science technologies:
+
+- **16 Structured Academic Curriculum Sections:** Comprehensive modules covering the global hydrological cycle, mass-balance equations ($P = Q + E + \Delta S$), Darcy's Law, surface water lotic/lentic systems, subterranean aquifers, crisis diagnostics, dedicated engineering analyses of **Rainwater Harvesting** and **Groundwater Recharge**, Sustainable Water Management (IWRM), and modern Smart IoT Telemetry.
+- **Interactive Engineering Suite:** A mathematical daily Water Footprint Calculator with World Health Organization (WHO) benchmarks, interactive hydrology knowledge quiz with immediate feedback, daily water-saving habit tracker, and interactive lightbox gallery.
+- **Full-Stack Relational Database Architecture:** Real-time data processing using PHP (PDO prepared statements) and a relational MySQL schema (`water_management_db`) with tables for contact messages, faculty evaluations, conservation pledges, and calculator audit records.
+- **Modern Responsive Design:** Custom vector SVG brand identity, glassmorphism, responsive grid layout, subtle interactive animations, and dark/light mode toggle.
 
 ---
 
-## 💻 2. Technology Stack
+## 👥 2. Project Team Members
 
-| Layer | Technologies Used |
-| :--- | :--- |
-| **Frontend UI** | HTML5, Modern CSS3 (Variables, 3D Depth, Glassmorphism), Bootstrap 5 Grid |
-| **Typography** | Google Fonts (*Outfit*, *Plus Jakarta Sans*, *JetBrains Mono*) |
-| **Icons & FX** | Font Awesome 6, Dynamic Canvas 2D Bubble Physics, CSS Layered SVG Waves |
-| **Client Logic** | Vanilla ES6+ JavaScript (Modular Architecture, IntersectionObserver, LocalStorage) |
-| **Backend API** | PHP 7.4+ / PHP 8.x (RESTful JSON Endpoints with PDO Prepared Statements) |
-| **Database** | MySQL 5.7+ / MySQL 8.0+ / MariaDB 10.3+ |
+**Institution:** Techno India University, West Bengal  
+**Location:** Kolkata, West Bengal, India  
+**Department:** Department of Computer Science & Engineering  
 
----
-
-## 📂 3. Directory Structure
-
-```text
-water-resources-management/
-│
-├── index.html              # Main responsive single-page web portal (12 sections)
-├── database.sql            # Complete MySQL database creation script with seed records
-├── README.md               # Comprehensive documentation and viva presentation guide
-│
-├── css/
-│   ├── style.css           # Core styling, glassmorphic cards, typography, dark/light theme
-│   ├── animations.css      # SVG wave parallax, floating bubble physics, glow pulses
-│   └── responsive.css      # Breakpoints for mobile, tablet, laptop, and ultra-wide screens
-│
-├── js/
-│   ├── main.js             # Theme toggle, scrollspy, navbar, animated stat counters, 3D tilt
-│   ├── calculator.js       # Real-time mathematical water footprint calculator & PDF export
-│   ├── interactive.js      # Daily challenges, academic quiz engine, gallery lightbox
-│   └── api-client.js       # AJAX fetch client, MySQL persistence, presentation DB inspector
-│
-└── api/
-    ├── db.php              # PDO Database connection with error handling & JSON responses
-    ├── contact.php         # POST endpoint for contact queries (contact_messages table)
-    ├── feedback.php        # POST & GET endpoints for reviews (feedback_reviews table)
-    ├── pledge.php          # POST & GET endpoints for water pledges (water_pledges table)
-    ├── calc-record.php     # POST endpoint for saving water audits (water_usage_records table)
-    └── live-feed.php       # Live MySQL monitor endpoint for college presentation demo
-```
+| No. | Team Member Full Name | University Roll Number | Academic Role |
+| :---: | :--- | :---: | :--- |
+| 1 | **Tamras Kar** | `251001001023` | Project Team Member |
+| 2 | **Sneha Sheet** | `251001001160` | Project Team Member |
+| 3 | **Dipwanita Sarkar** | `251001001129` | Project Team Member |
+| 4 | **Sayan Das** | `251001001132` | Project Team Member |
+| 5 | **Ankita Mandal** | `251001001128` | Project Team Member |
 
 ---
 
-## 🗄️ 4. MySQL Database Schema
+## 📚 3. Academic Structure (16 Core Modules)
 
-The database `water_management_db` contains 4 normalized tables:
-
-1. **`contact_messages`**:
-   - `id` (INT PK AI), `full_name`, `email`, `phone`, `subject`, `category`, `message`, `ip_address`, `created_at`, `status`.
-2. **`feedback_reviews`**:
-   - `id` (INT PK AI), `user_name`, `user_email`, `user_role`, `rating` (1-5), `feedback_category`, `comments`, `created_at`, `is_approved`.
-3. **`water_usage_records`**:
-   - `id` (INT PK AI), `user_name`, `family_members`, `daily_liters`, `monthly_liters`, `annual_liters`, `per_capita_daily`, `efficiency_grade`, `breakdown_json`, `created_at`.
-4. **`water_pledges`**:
-   - `id` (INT PK AI), `full_name`, `institution`, `target_liters_to_save`, `pledge_action`, `created_at`.
-
----
-
-## 🚀 5. How to Run Locally
-
-### Method A: Using XAMPP (Recommended for Full PHP & MySQL Features)
-
-1. **Download & Install XAMPP:**
-   - Download XAMPP from [apachefriends.org](https://www.apachefriends.org/) (includes Apache, PHP, and MySQL).
-2. **Move Project Folder:**
-   - Copy the `water-resources-management` folder into XAMPP's `htdocs` directory:
-     - Windows: `C:\xampp\htdocs\water-resources-management`
-     - Mac: `/Applications/XAMPP/htdocs/water-resources-management`
-3. **Start Apache & MySQL:**
-   - Open the **XAMPP Control Panel** and click **Start** next to **Apache** and **MySQL**.
-4. **Import Database:**
-   - Open your browser and navigate to `http://localhost/phpmyadmin/`.
-   - Click on the **Import** tab at the top.
-   - Click **Choose File** and select `database.sql` from the project folder.
-   - Click **Go** at the bottom. This will automatically create the database `water_management_db` and all tables with sample data.
-5. **Launch the Portal:**
-   - Open your browser and visit:
-     ```text
-     http://localhost/water-resources-management/
-     ```
+1. **Home Portal:** Hero section with dynamic tagline *"Every Drop Counts. Every Action Matters."*, live global statistics, and call-to-action portals.
+2. **Introduction:** Scientific definition of water resources, Earth's water budget, and global distribution matrix (97.5% saline vs 2.5% freshwater).
+3. **Understanding Water Resources:** The closed thermodynamic hydrological cycle, hydrological mass-balance equation ($P = Q + E + \Delta S$), aquifer hydrogeology, and Darcy's Law.
+4. **Types of Water Resources:** Surface water (lotic & lentic), groundwater aquifers, rainwater/precipitation, and marine oceans.
+5. **Importance of Water:** Food security & agriculture, drinking water & public sanitation (SDG 6), industrial manufacturing, ecosystem resilience, human health, and clean hydroelectric power.
+6. **Major Water Challenges:** Point & non-point pollution, physical vs economic scarcity, aquifer over-drafting & land subsidence, climate disruption, infrastructure leaks, and Bengal Basin arsenic contamination.
+7. **Rainwater Harvesting (RWH):** Mathematical sizing ($V = A \times R \times C \times \eta$), catchment surfaces, conveyance slopes, automated first-flush diverters, and multi-layer filtration media.
+8. **Groundwater Recharge:** Artificial aquifer recharge mechanics, piezometric monitoring ($\Delta V = \Delta h \times A \times S_y$), percolation pits, recharge shafts, check dams, and injection wells (ASR).
+9. **Sustainable Water Management:** Integrated Water Resources Management (IWRM), Dublin Principles, demand-side management (DSM), volumetric tariffs, and circular water systems.
+10. **Modern Technologies in Water Management:** IoT sensor telemetry (LoRaWAN / NB-IoT), AI acoustic leak detection with neural networks, GIS satellite radar altimetry & GRACE gravimetric anomaly mapping, SCADA pressure management, and membrane bioreactors.
+11. **Water Conservation:** Precision drip & micro-irrigation, industrial closed-loop recycling & Zero Liquid Discharge (ZLD), aerated low-flow fixtures, mulching, and greywater diversion.
+12. **Interactive Water Calculator:** Interactive daily consumption calculator with dynamic sliders, WHO benchmark comparison, interactive hydrology quiz, and daily habit tracker.
+13. **Hydrological Photo Gallery:** Filterable media gallery featuring alpine rivers, marine oceans, waterfalls, and conservation technologies with fullscreen interactive lightbox.
+14. **Project Team:** Official presentation card and verified member profiles for Techno India University, West Bengal.
+15. **Contact & Feedback:** Functional message and faculty evaluation forms integrated with PHP backend and database storage.
+16. **Conclusion:** Academic synthesis, policy recommendations, and the core call-to-action: *"SAVE WATER, SAVE LIFE."*
 
 ---
 
-### Method B: Using PHP Built-In Web Server & MySQL
+## 🛠️ 4. Technology Stack
 
-If you have PHP installed via CLI:
-```bash
-# Navigate to the project directory
-cd path/to/water-resources-management
-
-# Start PHP built-in development server
-php -S localhost:8000
-```
-Then open `http://localhost:8000` in your browser.
+- **Frontend:** Semantic HTML5, CSS3 Custom Properties (Variables), Vanilla Modern JavaScript (ES6+), Bootstrap 5 Grid.
+- **Styling Architecture:** Modern glassmorphism, responsive CSS grid, interactive canvas particle physics, dark/light theme toggle.
+- **Backend APIs:** PHP 8.x with secure PDO prepared statements, input sanitization, and CORS handling.
+- **Database:** MySQL 8.0 / MariaDB with normalized schema, constraints, UTF8mb4 character set, and indexing.
+- **SEO & Performance:** Structured data (Schema.org JSON-LD), sitemap.xml, robots.txt, Open Graph meta tags, and SVG vector graphics.
 
 ---
 
-### Method C: Standalone Client Mode (Instant Preview)
+## 🚀 5. How to Run Locally (For Professor & Viva Evaluation)
 
-If you need to quickly preview the UI without starting a web server or database:
-- Simply double-click `index.html` to open it directly in Chrome, Edge, Firefox, or Safari.
-- The portal's built-in `api-client.js` detects the offline mode and simulates form submissions and calculations smoothly in `localStorage` without generating any errors!
-
----
-
-## 🌐 6. How to Publish the Website Publicly (Hosting & Domain)
-
-### Option 1: Free PHP & MySQL Web Hosting (InfinityFree / 000webhost)
-
-1. Register a free account at [InfinityFree](https://www.infinityfree.com/) or [000webhost](https://www.000webhost.com/).
-2. Create a new website and note down the FTP/Control Panel credentials.
-3. Open **phpMyAdmin** from the hosting Control Panel, create a database, and import `database.sql`.
-4. Open `api/db.php` and update the credentials:
-   ```php
-   $host     = 'sqlxxx.infinityfree.com'; // Your hosting DB host
-   $dbname   = 'if0_xxxx_water_db';        // Your hosting DB name
-   $username = 'if0_xxxx';                 // Your hosting DB user
-   $password = 'your_account_password';    // Your hosting DB password
+### Option A: Using Built-in PHP Development Server
+1. Clone or navigate to the project directory:
+   ```bash
+   cd water-resources-management
    ```
-5. Open the **File Manager** (or connect via FileZilla FTP) and upload all files from `water-resources-management` into `htdocs` or `public_html`.
-6. Your portal is now publicly accessible via your free subdomain (e.g., `https://aquamanage.epizy.com`).
+2. Start the built-in development server:
+   ```bash
+   php -S localhost:8000
+   ```
+3. Open `http://localhost:8000` in any web browser.
 
-### Option 2: Shared Hosting with Custom Domain (Hostinger, Bluehost, cPanel)
-
-1. Purchase your domain name (e.g. `watermanagementproject.org` or `aquamanage.live`) and shared hosting.
-2. Log in to **cPanel** > **MySQL Database Wizard**:
-   - Create database name, user, and strong password. Grant all privileges.
-3. Open **cPanel** > **phpMyAdmin**, select the created database, and click **Import** to upload `database.sql`.
-4. Edit `api/db.php` with your live database credentials.
-5. In **cPanel File Manager**, upload all project files into `public_html`.
-6. Access your public website via your domain name!
-
----
-
-## 🎓 7. B.Tech Presentation & Viva Voce Guide
-
-When presenting this project to your college professors and evaluation panel, highlight these key engineering strengths:
-
-1. **Interdisciplinary Relevance (CS + Environmental Studies):**
-   - Emphasize how computer science principles (IoT sensors, predictive analytics, relational databases) directly solve environmental sustainability issues aligned with **UN SDG 6**.
-2. **Mathematical Rigor in the Calculator:**
-   - Explain how the calculator factors flow rates: 9 L/min showerheads, 7 L dual-flush toilets, 6 L/min sink taps, and compares personal consumption against the **WHO 135 L/capita/day standard**.
-3. **Live MySQL Demonstration:**
-   - Click the **"View Live MySQL Feed"** button on the page. Submit a test message or review in front of the professor and click "Refresh Feed" to prove real-time data persistence.
-4. **Modern UI Architecture:**
-   - Point out the responsive glassmorphism, dynamic 2D canvas water bubbles, SVG wave parallax, CSS dark/light mode toggle with `localStorage` caching, and 3D hover effects.
-5. **Code Hygiene & Security:**
-   - Highlight the use of **PDO Prepared Statements** in PHP to prevent SQL Injection, HTML output sanitization (`htmlspecialchars`), and client-side form validation.
+### Option B: Using XAMPP / WAMP
+1. Copy the `water-resources-management` folder into your `C:\xampp\htdocs\` directory.
+2. Open the **XAMPP Control Panel** and click **Start** for both **Apache** and **MySQL**.
+3. Open phpMyAdmin at `http://localhost/phpmyadmin`.
+4. Click **New**, name the database `water_management_db`, and click **Create**.
+5. Select `water_management_db`, navigate to the **Import** tab, choose `database.sql`, and click **Go**.
+6. Visit `http://localhost/water-resources-management` in your browser.
 
 ---
 
-## 👥 8. Project Credits
+## 🌐 6. Public Deployment & Architecture
 
-- **Project:** AQUAMANAGE – Water Resources and Management
-- **University:** Techno India University, West Bengal
-- **Location:** Kolkata, West Bengal, India
-- **Department:** Department of Computer Science & Engineering
-- **Team Members:**
-  1. **Tamras Kar** (Roll No: 251001001023) — Project Team Member
-  2. **Sneha Sheet** (Roll No: 251001001160) — Project Team Member
-  3. **Dipwanita Sarkar** (Roll No: 251001001129) — Project Team Member
-  4. **Sayan Das** (Roll No: 251001001132) — Project Team Member
-  5. **Ankita Mandal** (Roll No: 251001001128) — Project Team Member
+- **Static Frontend CDN:** Hosted live at `https://sayandas4606-crypto.github.io/aquamanage-water-resources/`.
+- **Backend Architecture Note:** GitHub Pages serves static frontend assets (HTML, CSS, JS, SVG, images). For full-stack live cloud MySQL connectivity, the `api/` folder and `database.sql` can be hosted on a cloud PHP/MySQL platform (e.g., InfinityFree, ByetHost, Render, or Railway) by pointing `js/api-client.js` to the live backend API URL.
 
 ---
-*“Every Drop Counts. Every Action Matters. SAVE WATER, SAVE LIFE.”*
+
+## 📄 7. Academic Integrity & License
+Developed strictly for academic demonstration and capstone presentation at **Techno India University, West Bengal**.  
+&copy; 2026 AQUAMANAGE Project Team. All Rights Reserved.

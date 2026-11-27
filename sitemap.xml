@@ -3,13 +3,28 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://sayandas4606-crypto.github.io/aquamanage-water-resources/</loc>
-        <lastmod>2026-11-24</lastmod>
+        <lastmod>2026-11-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://sayandas4606-crypto.github.io/aquamanage-water-resources/images/logo.svg</image:loc>
+            <image:title>AQUAMANAGE Water Resources and Management Logo</image:title>
+            <image:caption>Official vector emblem of AQUAMANAGE, Techno India University</image:caption>
+        </image:image>
         <image:image>
             <image:loc>https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
             <image:title>Alpine River Basin - Surface Water Resources</image:title>
             <image:caption>AQUAMANAGE Water Resources and Sustainable Management Educational Portal</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+            <image:title>Groundwater Aquifer Springs and Hydrogeology</image:title>
+            <image:caption>Subterranean aquifer storage and natural water filtration</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+            <image:title>Atmospheric Monsoon Rainwater Catchment</image:title>
+            <image:caption>Rooftop rainwater harvesting and artificial recharge systems</image:caption>
         </image:image>
         <image:image>
             <image:loc>https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>

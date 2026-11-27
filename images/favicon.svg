@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Primary Water Gradient -->
+    <linearGradient id="aquaDropGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="45%" stop-color="#0096c7"/>
+      <stop offset="100%" stop-color="#023e8a"/>
+    </linearGradient>
+
+    <!-- Vibrant Inner Wave Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#48cae4"/>
+      <stop offset="60%" stop-color="#0077b6"/>
+      <stop offset="100%" stop-color="#03045e"/>
+    </linearGradient>
+
+    <!-- Eco Sustainability Leaf Gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="60%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <!-- Glow & Shadow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#00b4d8" flood-opacity="0.35"/>
+    </filter>
+
+    <radialGradient id="highlightGlow" cx="35%" cy="25%" r="35%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#caf0f8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#caf0f8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer Water Droplet Base with Shadow -->
+  <path d="M 50,6 
+           C 56,18 85,46 85,64 
+           A 35,35 0 0,1 15,64 
+           C 15,46 44,18 50,6 Z" 
+        fill="url(#aquaDropGrad)" 
+        filter="url(#softGlow)"/>
+
+  <!-- Fluid Internal Wave Flow (Dynamic Hydro-Current) -->
+  <path d="M 17,66 
+           C 28,52 42,76 60,63 
+           C 74,53 81,60 84,66 
+           A 35,35 0 0,1 50,99 
+           A 35,35 0 0,1 17,66 Z" 
+        fill="url(#waveGrad)" 
+        opacity="0.95"/>
+
+  <!-- Sustainability Leaf Element (Environmental Life Arc) -->
+  <path d="M 50,22 
+           C 40,36 32,54 38,72 
+           C 43,58 50,44 58,34 
+           C 54,28 52,24 50,22 Z" 
+        fill="url(#leafGrad)" 
+        opacity="0.9"/>
+
+  <!-- Digital Water Telemetry & Management Pulse Node -->
+  <circle cx="58" cy="58" r="6" fill="#ffffff" opacity="0.95"/>
+  <circle cx="58" cy="58" r="10" fill="none" stroke="#00e5ff" stroke-width="1.8" stroke-dasharray="2, 2" opacity="0.9"/>
+  <circle cx="58" cy="58" r="14" fill="none" stroke="#caf0f8" stroke-width="1" opacity="0.5"/>
+
+  <!-- Specular Reflection Highlight (Gives 3D Glass Depth) -->
+  <path d="M 50,11 
+           C 53,20 70,42 70,55 
+           C 66,42 54,24 50,11 Z" 
+        fill="url(#highlightGlow)"/>
+</svg>
