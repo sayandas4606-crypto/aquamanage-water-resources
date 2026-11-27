@@ -2119,3 +2119,17 @@ img {
         display: block;
     }
 }
+
+/* Light Theme Hero Contrast Optimization */
+[data-theme="light"] .hero-section {
+    background: radial-gradient(circle at 50% 20%, rgba(0, 180, 216, 0.18) 0%, #f0f7ff 65%, #e2eefb 100%) !important;
+}
+[data-theme="light"] .hero-title {
+    color: #032b53 !important;
+}
+[data-theme="light"] .hero-subtitle {
+    color: #1e3a5f !important;
+}
+[data-theme="light"] .hero-wave-divider svg path {
+    fill: var(--bg-secondary) !important;
+}
